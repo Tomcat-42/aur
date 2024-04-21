@@ -31,5 +31,5 @@ Add the following to `/etc/pacman.conf`:
 	
 ```
 [tomcat0x42]
-Server = https://tomcat0x42.me/aur/
+Server = https://tomcat0x42.me/aur/pkgs/$arch
 ```
