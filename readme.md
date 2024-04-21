@@ -33,3 +33,16 @@ Add the following to `/etc/pacman.conf`:
 [tomcat0x42]
 Server = https://tomcat0x42.me/aur/pkgs/$arch
 ```
+
+And finally, sync pacman database:
+
+```
+sudo pacman -Sy
+```
+
+## Packages
+
+| **_name_**  | **_description_**                                                                                                           | **_upstream url_**                 |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| sandbar-git | dwm-like bar for the river wayland compositor                                                                               | https://github.com/kolunmi/sandbar |
+| llvm-git    | My build of the LLVM project. Includes among others clang, lld, lldb and libc++ with c++23 modules and Parallel STL support | https://llvm.org/                  |
