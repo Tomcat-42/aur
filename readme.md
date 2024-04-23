@@ -1,12 +1,4 @@
-<p align="center">
-    <img src="https://github.com/Tomcat-42/aur/assets/44649669/bc6c8427-2061-4c43-8a23-95c74946a335" width=512/>
-</p>
-
-<div align="center">
-    <a href="https://github.com/Tomcat-42/aur" target="_blank">
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Tomcat-42/aur?style=social">
-</div>
-
+![arch_logo](https://github.com/Tomcat-42/aur/assets/44649669/bc6c8427-2061-4c43-8a23-95c74946a335)
 
 > [Tomcat0x42's](https://aur.archlinux.org/account/tomcat0x42) personal pacman repo.
 > 
