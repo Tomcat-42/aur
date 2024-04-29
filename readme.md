@@ -24,7 +24,7 @@ sudo pacman-key --recv-keys D53B2A48C41BD647042FAD1059146EDE9B2F2872
 Or alternatively directly from the keyfile:
 
 ```bash
-wget tomcat0x42.me/aur/assets/tomcat0x42.gpg && sudo pacman-key --add tomcat0x42.gpg
+wget tomcat0x42.me/aur/tomcat0x42.gpg && sudo pacman-key --add tomcat0x42.gpg
 ```
 
 And verify/sign the key:
@@ -40,7 +40,7 @@ Add the following to `/etc/pacman.conf`:
 	
 ```bash
 [tomcat0x42]
-Server = https://tomcat0x42.me/aur/pkgs/$arch
+Server = https://tomcat0x42.me/aur/$arch
 ```
 
 And finally, sync pacman database:
