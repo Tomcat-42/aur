@@ -1,6 +1,6 @@
 pkgname=('libc++-git' 'libc++abi-git' 'libunwind-git')
 
-pkgver=19.0.0_r496435.bddfbe748ba5
+pkgver=19.0.0_r499112.597ac471cc7d
 pkgrel=1
 arch=('x86_64')
 url="https://llvm.org/"
