@@ -12,7 +12,7 @@
 
 pkgname=mesa-git
 pkgdesc="an open-source implementation of the OpenGL specification, git version"
-pkgver=24.1.0_devel.188225.1fb9e67f7e3.d41d8cd
+pkgver=24.2.0_devel.189514.08659a0baaa.d41d8cd
 pkgrel=1
 arch=('x86_64')
 makedepends=(
@@ -89,10 +89,10 @@ conflicts=(
     'mesa'
 )
 url="https://www.mesa3d.org"
-license=('custom')
+# license=('custom')
 source=(
     'mesa::git+https://gitlab.freedesktop.org/mesa/mesa.git#branch=main'
-    'LICENSE'
+    # 'LICENSE'
 )
 sha256sums=('SKIP'
             '7fdc119cf53c8ca65396ea73f6d10af641ba41ea1dd2bd44a824726e01c8b3f2'
@@ -293,5 +293,5 @@ package() {
     # indirect rendering
     ln -s /usr/lib/libGLX_mesa.so.0 "${pkgdir}/usr/lib/libGLX_indirect.so.0"
  
-    install -m644 -Dt "${pkgdir}/usr/share/licenses/${pkgname}" "${srcdir}/LICENSE"
+    # install -m644 -Dt "${pkgdir}/usr/share/licenses/${pkgname}" "${srcdir}/LICENSE"
 }
