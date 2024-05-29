@@ -22,5 +22,5 @@ popd || exit
 
 # Add to repo
 pushd ./pkgs/x86_64 || exit
-repo-add --verify --sign --key D53B2A48C41BD647042FAD1059146EDE9B2F2872 tomcat0x42.db.tar.gz ./*.pkg.tar.zst
+repo-add -R --verify --sign --key D53B2A48C41BD647042FAD1059146EDE9B2F2872 tomcat0x42.db.tar.gz ./*.pkg.tar.zst
 popd || exit
