@@ -1,7 +1,7 @@
 From a957a79427c07a9d4ec5850e93ba8d5934ba7b67 Mon Sep 17 00:00:00 2001
 From: Chuanqi Xu <yedeng.yd@linux.alibaba.com>
 Date: Fri, 24 May 2024 15:17:50 +0800
-Subject: [PATCH 2/2] Address comments
+Subject: [PATCH 2/4] Address comments
 
 ---
  clang-tools-extra/clangd/CMakeLists.txt       |   1 -
@@ -1722,5 +1722,5 @@ index 2552b233c580..ff69fdcaddc5 100644
  Inlay hints
  ^^^^^^^^^^^
 -- 
-2.45.1
+2.45.2
 
