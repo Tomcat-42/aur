@@ -4,7 +4,7 @@ _srcname=SPIRV-LLVM-Translator
 pkgname=spirv-llvm-translator-git
 pkgdesc="Tool and a library for bi-directional translation between SPIR-V and LLVM IR, trunk version"
 epoch=1
-pkgver=r2065.afa1f0b
+pkgver=r2097.dad1f0e
 pkgrel=1
 arch=('x86_64')
 url="https://github.com/KhronosGroup/SPIRV-LLVM-Translator"
@@ -31,7 +31,7 @@ build() {
         -B _build \
         -S "$srcdir"/$_srcname  \
         -G "Unix Makefiles" \
-        -D BASE_LLVM_VERSION=19 \
+        -D BASE_LLVM_VERSION=20 \
         -D CMAKE_BUILD_TYPE=Release \
         -D CMAKE_INSTALL_PREFIX=/usr \
         -D CMAKE_POSITION_INDEPENDENT_CODE=ON \

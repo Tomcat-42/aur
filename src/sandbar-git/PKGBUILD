@@ -1,6 +1,6 @@
 # Maintainer: Pablo Alessandro Santos Hugen <PabloASHugen@protonmail.com>
 pkgname=sandbar-git
-pkgver=v0.1.r11.4af3974
+pkgver=v0.1.r13.aa3f203
 pkgrel=1
 pkgdesc="dwm-like bar for the river wayland compositor"
 arch=(x86_64)
