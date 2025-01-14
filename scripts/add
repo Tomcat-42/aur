@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Add package to aur repo
+
+function usage() {
+    echo "Usage: $0 <package>"
+    exit 1
+}
+
+
+PKG="$1"
+
+if [ -z "$PKG" ]; then
+    usage
+fi
+
+# compile the pkgbuild
+pushd "$PKG" || exit
+makepkg -srf --sign --key D53B2A48C41BD647042FAD1059146EDE9B2F2872 --noconfirm
+mv ./*.pkg.tar.zst* "../../pkgs/x86_64"
+popd || exit
+
+# Add to repo
+pushd ./pkgs/x86_64 || exit
+repo-add -R --verify --sign --key D53B2A48C41BD647042FAD1059146EDE9B2F2872 tomcat0x42.db.tar.gz ./*.pkg.tar.zst
+popd || exit

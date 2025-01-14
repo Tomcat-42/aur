@@ -1,0 +1,5 @@
+#!/bin/env bash
+
+pushd ./pkgs/x86_64 || exit
+repo-add -R --verify --sign tomcat0x42.db.tar.gz *.pkg.tar.zst
+popd || exit
